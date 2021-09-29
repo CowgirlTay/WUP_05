@@ -62,7 +62,7 @@ basicCC <- ggplot(dd2,aes(x=infected,y=prcnt*100,fill=treatment))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
-The boxplot shows that of the women who got aids already had the vaccine.
+The boxplot shows that of the women who got aids already had the vaccine.  
 
 ### Numerical Descriptive Results
 
