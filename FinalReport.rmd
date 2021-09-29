@@ -17,6 +17,10 @@ triUmp <-read.csv(file="triUmpsal.csv",header=TRUE)
 
 A new  preventative aides drug (triUmpsal) is under test in clinical trials. Consider only the females, does this drug seem effective?  Hint - use dplyr to obtain that subpopulation with the filter command.
 
+$H_0$ : Among women there is no difference in the percentage those who got infected that received the vaccine and those who received the placebo.     
+
+$H_A$ : Among women there is a difference in the percentage those who got infected that received the vaccine and those who received the placebo.    
+
 # Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
@@ -86,8 +90,11 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-The p value in all 3 tests is very small therefor we reject the null hypothesis of does this drug seem effective.
+The p value in all 3 tests is very small therefor we reject the null hypothesis. The odds that women would get infected after getting the vaccine is 1.54 times more likely than those who did not. 
 
 # Discussion and Conclusion
 
-<!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+<!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+The results show us that the odds of women getting infected after receiving the vaccine is 1.54 : 1. In conclusion among women there is a difference in the percentage those who got infected that received the vaccine and those who received the placebo because the confidence interval for the odds ratio is above 1. The vaccine does not work for women!
+
