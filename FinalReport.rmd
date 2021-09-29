@@ -74,10 +74,19 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+This table shows that 59% of women who were infected had gotten the vaccine and 41% of women did not. 
+
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The p value in all 3 tests is very small therefor we reject the null hypothesis of does this drug seem effective.
 
 # Discussion and Conclusion
 
